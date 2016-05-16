@@ -1,0 +1,51 @@
+//this is the main.scss for the classQuiz
+@import 'buttons';
+@import 'reset';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.answer {
+  //border: 1px solid red;
+  background: lightcoral;
+  height: 15%;
+  margin: 10% 0%;
+  width: inherit;
+}
+
+.class{
+  background: lightcoral;
+  //height: 50px;
+  margin: 20px 0px;
+  padding: 2%;
+  position: relative;
+  width: 90%;
+
+  text{
+    width: 100%;
+    display: block;
+  }
+}
+
+.classes {
+  //border: 1px solid purple;
+}
+
+.question {
+  //border: 2px solid black;
+  background: lightcoral;
+  height: 25%;
+  width: inherit;
+}
+
+.results {
+  @extend .question;
+}
+
+.results-svg{
+  position: relative;
+}
